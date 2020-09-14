@@ -5,18 +5,35 @@ public class Post {
     private int ownerID;
     private int fromID;
     private int createdBy;
-    private boolean friendsOnly;
     private int date;
-    private String copyright;
-    private String postLogoURL;
-    private String profileName;
-    private String reportButton;
     private String mainText;
-    private String imageURL;
-    private String likesCount;
+    private int replyOwnerID;
+    private int replyPostID;
+    private boolean friendsOnly;
     private String commentButton;
-    private String repostButton;
+    private int commentCount;
+    private boolean commentCanPost;
+    private boolean commentCanClose;
+    private boolean commentCanOpen;
+    private String copyright;
+    private int likesCount;
+    private boolean userLikes;
+    private boolean canLike;
+    private boolean canPublish;
+    private int repostsCount;
+    private boolean userReposted;
     private int viewsCount;
+    private String postType;
+    private String postSource;
+    private String geo;
+    private int signerID;
+    private boolean canPin;
+    private boolean canDelete;
+    private boolean canEdit;
+    private boolean pinned;
+    private boolean markedAsAd;
+    private boolean favorite;
+    private int postponedID;
 
     public int getId() {
         return id;
@@ -50,52 +67,12 @@ public class Post {
         this.createdBy = createdBy;
     }
 
-    public boolean isFriendsOnly() {
-        return friendsOnly;
-    }
-
-    public void setFriendsOnly(boolean friendsOnly) {
-        this.friendsOnly = friendsOnly;
-    }
-
     public int getDate() {
         return date;
     }
 
     public void setDate(int date) {
         this.date = date;
-    }
-
-    public String getCopyright() {
-        return copyright;
-    }
-
-    public void setCopyright(String copyright) {
-        this.copyright = copyright;
-    }
-
-    public String getPostLogoURL() {
-        return postLogoURL;
-    }
-
-    public void setPostLogoURL(String postLogoURL) {
-        this.postLogoURL = postLogoURL;
-    }
-
-    public String getProfileName() {
-        return profileName;
-    }
-
-    public void setProfileName(String profileName) {
-        this.profileName = profileName;
-    }
-
-    public String getReportButton() {
-        return reportButton;
-    }
-
-    public void setReportButton(String reportButton) {
-        this.reportButton = reportButton;
     }
 
     public String getMainText() {
@@ -106,20 +83,28 @@ public class Post {
         this.mainText = mainText;
     }
 
-    public String getImageURL() {
-        return imageURL;
+    public int getReplyOwnerID() {
+        return replyOwnerID;
     }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+    public void setReplyOwnerID(int replyOwnerID) {
+        this.replyOwnerID = replyOwnerID;
     }
 
-    public String getLikesCount() {
-        return likesCount;
+    public int getReplyPostID() {
+        return replyPostID;
     }
 
-    public void setLikesCount(String likesCount) {
-        this.likesCount = likesCount;
+    public void setReplyPostID(int replyPostID) {
+        this.replyPostID = replyPostID;
+    }
+
+    public boolean isFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(boolean friendsOnly) {
+        this.friendsOnly = friendsOnly;
     }
 
     public String getCommentButton() {
@@ -130,12 +115,92 @@ public class Post {
         this.commentButton = commentButton;
     }
 
-    public String getRepostButton() {
-        return repostButton;
+    public int getCommentCount() {
+        return commentCount;
     }
 
-    public void setRepostButton(String repostButton) {
-        this.repostButton = repostButton;
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
+    }
+
+    public boolean isCommentCanPost() {
+        return commentCanPost;
+    }
+
+    public void setCommentCanPost(boolean commentCanPost) {
+        this.commentCanPost = commentCanPost;
+    }
+
+    public boolean isCommentCanClose() {
+        return commentCanClose;
+    }
+
+    public void setCommentCanClose(boolean commentCanClose) {
+        this.commentCanClose = commentCanClose;
+    }
+
+    public boolean isCommentCanOpen() {
+        return commentCanOpen;
+    }
+
+    public void setCommentCanOpen(boolean commentCanOpen) {
+        this.commentCanOpen = commentCanOpen;
+    }
+
+    public String getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
+    }
+
+    public int getLikesCount() {
+        return likesCount;
+    }
+
+    public void setLikesCount(int likesCount) {
+        this.likesCount = likesCount;
+    }
+
+    public boolean isUserLikes() {
+        return userLikes;
+    }
+
+    public void setUserLikes(boolean userLikes) {
+        this.userLikes = userLikes;
+    }
+
+    public boolean isCanLike() {
+        return canLike;
+    }
+
+    public void setCanLike(boolean canLike) {
+        this.canLike = canLike;
+    }
+
+    public boolean isCanPublish() {
+        return canPublish;
+    }
+
+    public void setCanPublish(boolean canPublish) {
+        this.canPublish = canPublish;
+    }
+
+    public int getRepostsCount() {
+        return repostsCount;
+    }
+
+    public void setRepostsCount(int repostsCount) {
+        this.repostsCount = repostsCount;
+    }
+
+    public boolean isUserReposted() {
+        return userReposted;
+    }
+
+    public void setUserReposted(boolean userReposted) {
+        this.userReposted = userReposted;
     }
 
     public int getViewsCount() {
@@ -144,5 +209,93 @@ public class Post {
 
     public void setViewsCount(int viewsCount) {
         this.viewsCount = viewsCount;
+    }
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public void setPostType(String postType) {
+        this.postType = postType;
+    }
+
+    public String getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(String postSource) {
+        this.postSource = postSource;
+    }
+
+    public String getGeo() {
+        return geo;
+    }
+
+    public void setGeo(String geo) {
+        this.geo = geo;
+    }
+
+    public int getSignerID() {
+        return signerID;
+    }
+
+    public void setSignerID(int signerID) {
+        this.signerID = signerID;
+    }
+
+    public boolean isCanPin() {
+        return canPin;
+    }
+
+    public void setCanPin(boolean canPin) {
+        this.canPin = canPin;
+    }
+
+    public boolean isCanDelete() {
+        return canDelete;
+    }
+
+    public void setCanDelete(boolean canDelete) {
+        this.canDelete = canDelete;
+    }
+
+    public boolean isCanEdit() {
+        return canEdit;
+    }
+
+    public void setCanEdit(boolean canEdit) {
+        this.canEdit = canEdit;
+    }
+
+    public boolean isPinned() {
+        return pinned;
+    }
+
+    public void setPinned(boolean pinned) {
+        this.pinned = pinned;
+    }
+
+    public boolean isMarkedAsAd() {
+        return markedAsAd;
+    }
+
+    public void setMarkedAsAd(boolean markedAsAd) {
+        this.markedAsAd = markedAsAd;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
+    }
+
+    public int getPostponedID() {
+        return postponedID;
+    }
+
+    public void setPostponedID(int postponedID) {
+        this.postponedID = postponedID;
     }
 }
